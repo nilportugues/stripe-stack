@@ -114,12 +114,7 @@ async function updateProjectNameFromRiles(rootDirectory, APP_NAME) {
 }
 
 async function removeUnusedFiles(rootDirectory) {
-  const FILES_TO_REMOVE = [
-    'CODE_OF_CONDUCT.md',
-    'LICENSE',
-    'CONTRIBUTING.md',
-    'SECURITY.md',
-  ]
+  const FILES_TO_REMOVE = ['CODE_OF_CONDUCT.md', 'LICENSE', 'SECURITY.md']
 
   await Promise.all(
     FILES_TO_REMOVE.map((file) => fs.unlink(path.join(rootDirectory, file))),
