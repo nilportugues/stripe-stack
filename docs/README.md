@@ -123,20 +123,7 @@ npx prisma migrate dev --name init --skip-seed
 ```
 
 > [!NOTE]
-> Remix SaaS already comes with the initial migrations required to start the project. Use the above command to create new migrations or to reset your database.
-
-## Seeding Database
-
-Now that we have our migrations initialized, we'll require to seed it with our Stripe Plans. Check `/modules/stripe/plans` to learn more about it.
-
-Once you're done, run the following command in your console:
-
-```sh
-npx prisma db seed
-```
-
-> [!NOTE]
-> Resetting our migrations will require us to clean our Stripe Data. You can do that by visiting your [Stripe Test Dashboard](https://dashboard.stripe.com/test/developers), scrolling down and clicking on `Delete all test data` button.
+> Resetting migrations will require us to clean our Stripe Data. You can do that by visiting your [Stripe Test Dashboard](https://dashboard.stripe.com/test/developers), scrolling down and clicking on `Delete all test data` button.
 
 # Development Server
 
