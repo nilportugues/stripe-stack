@@ -119,7 +119,7 @@ Before starting our development, we'll require to setup our Prisma Migrations. R
 To start our migrations, run the following command in your console:
 
 ```sh
-npx prisma migrate dev --name init --skip-seed
+npx prisma migrate dev --name init
 ```
 
 > [!NOTE]
